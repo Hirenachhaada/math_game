@@ -82,7 +82,7 @@ const App = () => {
 
   const submitScore = async () => {
     try {
-      await axios.post("http://localhost:5000/submit", { userId, score });
+      await axios.post("https://math-game-backend.onrender.com/submit", { userId, score });
       alert("Score submitted successfully.");
     } catch (error) {
       alert("Error submitting score.");
